@@ -95,6 +95,11 @@
   /* team */
   .team-card{display:flex; gap:22px; align-items:center; flex-wrap:wrap;}
   .avatar{width:84px; height:84px; border-radius:50%; background:linear-gradient(135deg,var(--amber),var(--green)); display:flex; align-items:center; justify-content:center; font-size:2rem; font-weight:800; color:#1a1206; flex:none;}
+  .avatar-photo{width:96px; height:96px; border-radius:50%; object-fit:cover; flex:none; border:2px solid var(--amber);}
+  figure{margin:0;}
+  .mediaframe{width:100%; border-radius:14px; border:1px solid var(--line-dk); display:block;}
+  figcaption{font-size:.85rem; color:var(--muted); margin-top:10px; line-height:1.45;}
+  .dark figcaption{color:#aab8c4;}
 
   /* footer / contact */
   .contact{background:var(--ink); color:var(--paper); text-align:center;}
@@ -130,6 +135,7 @@
   <div class="wrap nav">
     <a class="brand" href="#top">AYA <span class="ar">آية</span></a>
     <nav class="navlinks" id="menu">
+      <a href="#demo">Demo</a>
       <a href="#problem">Problem</a>
       <a href="#solution">Solution</a>
       <a href="#markets">Markets</a>
@@ -158,6 +164,32 @@
       <span class="chip"><b>✓</b> Working prototype</span>
       <span class="chip"><b>✓</b> No SLAM · No GPS · No leash</span>
       <span class="chip"><b>✓</b> Abu Dhabi</span>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO / PROOF -->
+<section id="demo" class="dark" style="background:#0a131e;">
+  <div class="wrap">
+    <div class="eyebrow reveal">See it run</div>
+    <h2 class="reveal" style="color:#fff; margin-top:8px;">Not a render — our Go2 prototype.</h2>
+    <div class="rule reveal"></div>
+    <div class="grid2">
+      <figure class="reveal">
+        <img class="mediaframe" src="assets/go2_nav.gif" alt="AYA navigating on a real Go2 quadruped, SLAM-free" loading="lazy">
+        <figcaption>Live SLAM-free navigation on our quadruped prototype — real LiDAR/camera, no pre-built map, no remote pilot.</figcaption>
+      </figure>
+      <div class="reveal">
+        <ul class="feat">
+          <li><b style="color:#fff">Real robot, real sensors</b> — the on-board brain perceives the scene and chooses each move in plain-language steps.</li>
+          <li>No map, no GPS lock, no joystick — just a camera and cheap depth.</li>
+          <li>Firmware reflexes keep it safe between brain decisions.</li>
+        </ul>
+        <figure class="reveal" style="margin-top:20px;">
+          <img class="mediaframe" src="assets/depth.jpg" alt="Metric depth from a single camera" loading="lazy">
+          <figcaption>What AYA sees: metric depth from a single camera — geometry without a map.</figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
@@ -276,7 +308,7 @@
     <div class="rule reveal"></div>
     <div class="card reveal">
       <div class="team-card">
-        <div class="avatar">N</div>
+        <img class="avatar-photo" src="assets/founder.jpg" alt="Nurmukhambet Serikbayev">
         <div style="flex:1; min-width:240px;">
           <div style="font-size:1.25rem; font-weight:800;">Nurmukhambet Serikbayev</div>
           <div class="amber" style="font-weight:700;">Founder &amp; CEO/CTO</div>
