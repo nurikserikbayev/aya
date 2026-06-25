@@ -81,6 +81,8 @@
   /* failover ladder */
   .ladder{display:flex; flex-direction:column; gap:12px; margin-top:8px;}
   .rung{display:flex; gap:16px; background:var(--white); border:1px solid var(--line); border-left:5px solid var(--amber); border-radius:10px; padding:16px 18px;}
+  .dark .rung{background:var(--ink2); color:var(--paper); border-top-color:var(--line-dk); border-right-color:var(--line-dk); border-bottom-color:var(--line-dk);}
+  .dark .rung b{color:#fff;}
   .rung .n{font-family:var(--mono); font-weight:700; color:var(--amber-d); min-width:74px; font-size:.85rem; padding-top:2px;}
   .rung.safe{border-left-color:var(--green);} .rung.safe .n{color:var(--green);}
 
