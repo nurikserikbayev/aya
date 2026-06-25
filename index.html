@@ -125,6 +125,8 @@
     .burger{display:block;}
     section{padding:64px 0;}
   }
+  .vidgrid{display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:20px;}
+  @media (max-width:860px){ .vidgrid{grid-template-columns:1fr;} }
   @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important;} .hero canvas{display:none;} .reveal{opacity:1; transform:none;}}
 </style>
 <noscript><style>.reveal{opacity:1; transform:none;}</style></noscript>
@@ -194,6 +196,28 @@
   </div>
 </section>
 
+<!-- BUILT FOR REAL / LAB -->
+<section id="lab" class="paper">
+  <div class="wrap">
+    <div class="grid2" style="align-items:center;">
+      <figure class="reveal">
+        <img class="mediaframe" src="assets/founder_robots.jpg" alt="Founder with AYA's robot fleet in the Abu Dhabi lab" loading="lazy" style="border-color:var(--line);">
+        <figcaption>Founder Nurmukhambet Serikbayev with the working robot fleet — Abu Dhabi.</figcaption>
+      </figure>
+      <div class="reveal">
+        <div class="eyebrow">Built for real</div>
+        <h2 style="margin-top:8px;">A working robotics lab — not a slide deck.</h2>
+        <div class="rule"></div>
+        <p class="lead">AYA is built hands-on with a real fleet — quadrupeds, rovers and manipulators — on a live indoor logistics testbed in Abu Dhabi. The hard part, autonomy that works on real hardware, is already running.</p>
+        <figure class="reveal" style="margin-top:20px;">
+          <img class="mediaframe" src="assets/lab_fleet.jpg" alt="Robot fleet on an indoor delivery testbed" loading="lazy" style="border-color:var(--line);">
+          <figcaption>The fleet on our indoor delivery testbed.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- PROBLEM -->
 <section id="problem" class="paper">
   <div class="wrap">
@@ -247,6 +271,27 @@
         <p style="color:#aab8c4; font-size:.95rem; margin-top:14px;">Need guaranteed-coverage routes or centimetre docking? An optional <b style="color:#fff">SLAM/Nav2 precision tier</b> layers on top. <b style="color:#fff">Map-free by default; precise when you pay for it.</b></p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- RESEARCH FOUNDATION -->
+<section id="research" class="paper">
+  <div class="wrap">
+    <div class="eyebrow reveal">Grounded in published research</div>
+    <h2 class="reveal" style="margin-top:8px;">The paradigm, proven in peer-reviewed work.</h2>
+    <div class="rule reveal"></div>
+    <p class="lead reveal">AYA's navigation brain builds on <b>NaVILA</b> (Cheng et&nbsp;al., <a href="https://navila-bot.github.io/" target="_blank" rel="noopener" style="color:var(--amber-d); border-bottom:1px solid rgba(184,127,28,.4);">RSS&nbsp;2025</a>) — language-instructed, map-free navigation for legged robots. Below, the approach shown in simulation from the NaVILA project.</p>
+    <div class="vidgrid reveal">
+      <figure>
+        <video class="mediaframe" src="https://navila-bot.github.io/videos/isaac/go2_vision_360.mp4" controls muted loop playsinline preload="metadata" style="border-color:var(--line);"></video>
+        <figcaption>Quadruped vision-language navigation in simulation. Source: NaVILA (RSS&nbsp;2025).</figcaption>
+      </figure>
+      <figure>
+        <video class="mediaframe" src="https://navila-bot.github.io/videos/isaac/h1_vision_2.mp4" controls muted loop playsinline preload="metadata" style="border-color:var(--line);"></video>
+        <figcaption>Humanoid vision-language navigation in simulation. Source: NaVILA (RSS&nbsp;2025).</figcaption>
+      </figure>
+    </div>
+    <p class="reveal" style="font-size:.82rem; color:var(--muted); margin-top:14px; font-style:italic;">Videos © the NaVILA authors, shown as the research foundation AYA builds on — not AYA product footage.</p>
   </div>
 </section>
 
